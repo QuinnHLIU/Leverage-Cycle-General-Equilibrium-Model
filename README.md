@@ -1,7 +1,7 @@
 # Leverage-Cycle-General-Equilibrium-Model
 example code for leverage cycle models
 
-The project firstly consists several slides briefly introducing the collateral equilibrium model by Fostel and Geanakoplos (2008, 2012). The code folder consists sample matlab function to showcase the basic idea.
+The project firstly consists several slides briefly introducing the collateral equilibrium model by Fostel and Geanakoplos (2008, 2012). The code folder consists sample matlab function to showcase some numerical examples to fix idea.
 
 ## Section 1. The Leverage Economy and Concept of Collateral Equilibrium
 
@@ -14,6 +14,8 @@ The equilibrium is solved by equating both the indifference condition of the mar
 Code: **Leverage.m** 
 
 It firstly computes a no borrowing benchmark, and compare the result with "Leverage Economy" allowing for borrowing. Debts are all non-recourse hence the No-default theorem applies (Geanakoplos, 1997), i.e., only the min-max contracts will be traded.
+
+The model is solved by both `fsolve' and a grid search procedure.
 
 
 ## Section 2. The Anxious Economy
